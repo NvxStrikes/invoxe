@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="InvoXe — Cinematic invoice generator for every industry. PDF, PNG, SVG & more. Built by NovaStrikes."/>
+  <title>InvoXe · Invoice Like a Pro</title>
+
+  <!-- Shared + Page CSS -->
+  <link rel="stylesheet" href="assets/css/_shared.css"/>
+  <link rel="stylesheet" href="assets/css/index.css"/>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>✦</text></svg>"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- VANTA BACKGROUND -->
+  <div id="vanta-bg"></div>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">Invo<span>Xe</span></div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#formats">Formats</a></li>
+      <li><a href="#templates">Templates</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-ghost">Login</button>
+      <button class="btn-gold">Start Free</button>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="home">
+    <div class="hero">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Trusted by 12,000+ Freelancers
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line"><span class="word">Invoice</span></span>
+          <span class="line"><span class="word">Like&nbsp;a</span></span>
+          <span class="line"><span class="word gold">Pro.</span></span>
+        </h1>
+
+        <p class="hero-sub">
+          Pick your industry. Fill your details. Export in any format —
+          PDF, PNG, SVG, PPT and more. Clean invoices that make clients
+          take you seriously.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-gold">Generate Free Invoice</button>
+          <button class="btn-outline">Browse Templates</button>
+        </div>
+
+        <p class="hero-note">✦ No credit card &nbsp;·&nbsp; No watermark on Pro &nbsp;·&nbsp; Cancel anytime</p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-num" data-target="12" data-suffix="K+">0</div>
+            <div class="stat-label">Active Users</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-target="40" data-suffix="+">0</div>
+            <div class="stat-label">Niche Templates</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num" data-target="8" data-suffix=" Formats">0</div>
+            <div class="stat-label">Export Options</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — THREE.JS Canvas -->
+      <div class="hero-right">
+        <div class="hero-right-glow"></div>
+        <canvas id="threejs-hero-canvas"></canvas>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ TICKER ══════════════ -->
+  <div class="ticker-section">
+    <div class="ticker-track">
+      <span class="ticker-item">PDF Export <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">PNG Download <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">SVG Vector <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">PowerPoint Slides <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">JPEG Export <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Construction Templates <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Photography Invoices <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Freelance Billing <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Salon &amp; Spa <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Zero Watermarks on Pro <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Logo Upload <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Custom Brand Colors <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Mechanic Shop <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">Real Estate Invoices <span class="ticker-sep">◆</span></span>
+    </div>
+  </div>
+
+  <!-- ══════════════ FEATURES ══════════════ -->
+  <section id="features">
+    <div class="features-section">
+      <div class="features-header">
+        <div class="reveal">
+          <div class="section-label">Why InvoXe</div>
+          <h2 class="section-title">Engineered for<br>Precision</h2>
+        </div>
+        <div class="reveal reveal-d1">
+          <p class="section-sub">No bloat. No confusion. A razor-sharp tool that gets your invoice out the door in under 60 seconds — and makes you look like a real business.</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-number">01</div>
+          <span class="feat-icon">📄</span>
+          <div class="feat-title">Multi-Format Export</div>
+          <div class="feat-desc">PDF, PNG, JPG, SVG, JPEG, WEBP, PPT — download your invoice in literally any format your client needs.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-number">02</div>
+          <span class="feat-icon">🏗️</span>
+          <div class="feat-title">40+ Niche Templates</div>
+          <div class="feat-desc">Construction, Photography, Freelance Dev, Salon, Real Estate, Mechanic — each built for how that industry actually bills.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-number">03</div>
+          <span class="feat-icon">🎨</span>
+          <div class="feat-title">Brand Identity</div>
+          <div class="feat-desc">Upload your logo, set your brand colors. Your invoice looks like YOUR business — not generic SaaS software.</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-number">04</div>
+          <span class="feat-icon">✦</span>
+          <div class="feat-title">Zero Watermarks</div>
+          <div class="feat-desc">Pro outputs are completely clean. No "Made with InvoXe" stamps. Just your brand. Nothing else.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ HOW IT WORKS ══════════════ -->
+  <div class="gold-line"></div>
+  <section id="how">
+    <div class="how-section">
+      <div class="how-inner">
+        <div class="reveal" style="text-align:center; margin-bottom:0">
+          <div class="section-label" style="justify-content:center">How It Works</div>
+          <h2 class="section-title" style="text-align:center">Three Steps.<br>One Perfect Invoice.</h2>
+        </div>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="step-num">01</div>
+            <div class="step-title">Pick Your Niche</div>
+            <div class="step-desc">Choose your industry from 40+ categories. InvoXe loads the exact fields and layout your clients expect to see.</div>
+          </div>
+          <div class="how-step">
+            <div class="step-num">02</div>
+            <div class="step-title">Fill Your Details</div>
+            <div class="step-desc">Add your business info, client details, line items, taxes. Upload your logo. Set your brand colors. Done in 60 seconds.</div>
+          </div>
+          <div class="how-step">
+            <div class="step-num">03</div>
+            <div class="step-title">Export &amp; Get Paid</div>
+            <div class="step-desc">Download as PDF, PNG, SVG, PPT or more. Send it to your client and collect your money like a pro.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="gold-line"></div>
+
+  <!-- ══════════════ FORMATS ══════════════ -->
+  <section id="formats">
+    <div class="formats-section">
+
+      <!-- LEFT -->
+      <div class="reveal from-left">
+        <div class="section-label">Export Formats</div>
+        <h2 class="section-title">Every Format.<br>One Click.</h2>
+        <p class="section-sub">Client wants a PDF? Done. Designer needs an SVG? Done. Presentation in PPT? Done. No conversions, no third-party tools.</p>
+        <div class="format-pills">
+          <span class="format-pill active"><span>PDF</span></span>
+          <span class="format-pill"><span>PNG</span></span>
+          <span class="format-pill"><span>JPG</span></span>
+          <span class="format-pill"><span>JPEG</span></span>
+          <span class="format-pill"><span>SVG</span></span>
+          <span class="format-pill"><span>PPT</span></span>
+          <span class="format-pill"><span>PPTX</span></span>
+          <span class="format-pill"><span>WEBP</span></span>
+        </div>
+      </div>
+
+      <!-- RIGHT — Floating invoice DOM cards -->
+      <div class="invoices-float reveal from-right">
+        <div class="inv-card inv-card-1">
+          <div class="inv-top-bar"></div>
+          <div class="inv-brand">ConstructPro LLC</div>
+          <div class="inv-num">INVOICE #2026-087</div>
+          <div class="inv-divider"></div>
+          <div class="inv-row"><span>Foundation Work</span><span>$4,200</span></div>
+          <div class="inv-row"><span>Materials (Bulk)</span><span>$1,850</span></div>
+          <div class="inv-row"><span>Labor — 40 hrs</span><span>$3,200</span></div>
+          <div class="inv-row"><span>Equipment Rental</span><span>$800</span></div>
+          <div class="inv-divider"></div>
+          <div class="inv-total-row">
+            <span>TOTAL DUE</span>
+            <span class="inv-total-amt">$10,050</span>
+          </div>
+        </div>
+
+        <div class="inv-card inv-card-2">
+          <div class="inv-top-bar"></div>
+          <div class="inv-brand">Sarah Chen Photo</div>
+          <div class="inv-num">INVOICE #2026-031</div>
+          <div class="inv-divider"></div>
+          <div class="inv-row"><span>Wedding Package</span><span>$2,800</span></div>
+          <div class="inv-row"><span>Edit — 200 photos</span><span>$600</span></div>
+          <div class="inv-row"><span>Rush Delivery</span><span>$200</span></div>
+          <div class="inv-divider"></div>
+          <div class="inv-total-row">
+            <span>TOTAL</span>
+            <span class="inv-total-amt">$3,600</span>
+          </div>
+        </div>
+
+        <div class="inv-card inv-card-3">
+          <div class="inv-top-bar"></div>
+          <div class="inv-brand">DevStudio</div>
+          <div class="inv-num">INV #DS-2026-14</div>
+          <div class="inv-divider"></div>
+          <div class="inv-row"><span>Web App Development</span><span>$5,500</span></div>
+          <div class="inv-row"><span>UI/UX Design</span><span>$1,200</span></div>
+          <div class="inv-divider"></div>
+          <div class="inv-total-row">
+            <span>DUE</span>
+            <span class="inv-total-amt">$6,700</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ TEMPLATES ══════════════ -->
+  <div class="gold-line"></div>
+  <section id="templates" class="templates-section">
+    <div class="templates-head">
+      <div class="reveal">
+        <div class="section-label">Industry Templates</div>
+        <h2 class="section-title">Built For Your<br>Industry</h2>
+      </div>
+      <button class="btn-outline reveal reveal-d2">View All 40+ Templates</button>
+    </div>
+
+    <div class="templates-scroll">
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="display:flex;justify-content:space-between;margin-bottom:14px">
+            <div style="width:55px;height:7px;background:var(--gold);opacity:0.6;border-radius:2px"></div>
+            <div style="width:35px;height:7px;background:var(--border);border-radius:2px"></div>
+          </div>
+          <div class="tmpl-line g s"></div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-line s"></div>
+          <div class="tmpl-line xl"></div>
+          <div style="margin-top:18px;display:flex;justify-content:space-between">
+            <div style="width:28%;height:5px;background:var(--border);border-radius:2px"></div>
+            <div style="width:22%;height:5px;background:rgba(200,169,110,0.5);border-radius:2px"></div>
+          </div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Heavy Industry</div>
+          <div class="tmpl-name">Construction</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="text-align:center;margin-bottom:12px">
+            <div style="width:36px;height:36px;border-radius:50%;border:1px solid var(--border);margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-size:16px">📸</div>
+            <div style="width:70px;height:5px;background:var(--border);border-radius:2px;margin:0 auto"></div>
+          </div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-line s"></div>
+          <div class="tmpl-line xl"></div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Visual Arts</div>
+          <div class="tmpl-name">Photography</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="display:flex;gap:10px;height:140px">
+            <div style="width:32%;border-right:1px solid var(--border);padding-right:10px;padding-top:4px">
+              <div style="height:5px;background:var(--gold);opacity:0.5;border-radius:2px;margin-bottom:8px"></div>
+              <div style="height:4px;background:var(--border);border-radius:2px;margin-bottom:6px"></div>
+              <div style="height:4px;background:var(--border);border-radius:2px;width:65%"></div>
+            </div>
+            <div style="flex:1;padding-top:4px">
+              <div class="tmpl-line s"></div>
+              <div class="tmpl-line m"></div>
+              <div class="tmpl-line xl"></div>
+              <div class="tmpl-line s"></div>
+            </div>
+          </div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Digital Services</div>
+          <div class="tmpl-name">Freelance Dev</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="text-align:center;margin-bottom:14px">
+            <div style="width:44px;height:5px;background:rgba(200,169,110,0.6);border-radius:2px;margin:0 auto 14px"></div>
+          </div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-line s"></div>
+          <div class="tmpl-line g xl"></div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Retail &amp; Beauty</div>
+          <div class="tmpl-name">Salon &amp; Spa</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px">
+            <div style="font-size:22px">🔧</div>
+            <div style="width:28px;height:5px;background:rgba(200,169,110,0.4);border-radius:2px;margin-top:8px"></div>
+          </div>
+          <div class="tmpl-line xl"></div>
+          <div class="tmpl-line s"></div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Automotive</div>
+          <div class="tmpl-name">Mechanic Shop</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="background:var(--navy);height:40px;margin:-20px -20px 14px;display:flex;align-items:center;padding:0 16px">
+            <div style="width:40px;height:5px;background:var(--gold);opacity:0.5;border-radius:2px"></div>
+          </div>
+          <div class="tmpl-line m"></div>
+          <div class="tmpl-line s"></div>
+          <div class="tmpl-line xl"></div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Property</div>
+          <div class="tmpl-name">Real Estate</div>
+        </div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-preview">
+          <div style="text-align:center;padding-top:16px">
+            <div style="font-size:28px;margin-bottom:12px">⚖️</div>
+            <div style="width:60px;height:5px;background:var(--border);border-radius:2px;margin:0 auto"></div>
+          </div>
+          <div class="tmpl-hover-overlay"><button class="btn-outline" style="font-size:10px;padding:8px 18px">Preview</button></div>
+        </div>
+        <div class="tmpl-info">
+          <div class="tmpl-cat">Legal Services</div>
+          <div class="tmpl-name">Law Firm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="gold-line"></div>
+
+  <!-- ══════════════ PRICING ══════════════ -->
+  <section id="pricing">
+    <div class="pricing-section">
+      <div class="pricing-head reveal">
+        <div class="section-label" style="justify-content:center">Pricing</div>
+        <h2 class="section-title">Transparent. Simple.<br>No Surprises.</h2>
+        <p class="section-sub">Start free forever. Upgrade when you need the pro features. One-time payment available — pay once, use forever.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- FREE -->
+        <div class="plan-card">
+          <div class="plan-tier">Starter</div>
+          <div class="plan-price"><sup>$</sup>0</div>
+          <div class="plan-period">Forever free</div>
+          <div class="plan-divider"></div>
+          <div class="plan-features">
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> 5 invoices / month</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> 3 niche templates</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> PDF export only</div>
+            <div class="plan-feat off"><span class="plan-feat-icon">✕</span> InvoXe watermark</div>
+            <div class="plan-feat off"><span class="plan-feat-icon">✕</span> No logo upload</div>
+            <div class="plan-feat off"><span class="plan-feat-icon">✕</span> Limited formats</div>
+          </div>
+          <button class="btn-outline" style="width:100%;padding:14px 0;justify-content:center">Get Started Free</button>
+        </div>
+
+        <!-- PRO (featured) -->
+        <div class="plan-card featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-tier">Professional</div>
+          <div class="plan-price" style="color:var(--gold)"><sup>$</sup>12</div>
+          <div class="plan-period">per month</div>
+          <div class="plan-onetime">or $29 one-time — pay once, yours forever</div>
+          <div class="plan-divider"></div>
+          <div class="plan-features">
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Unlimited invoices</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> All 40+ templates</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> All export formats</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Upload your logo</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Zero watermarks</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Custom brand colors</div>
+          </div>
+          <button class="btn-gold" style="width:100%;padding:15px 0;justify-content:center">Upgrade to Pro</button>
+        </div>
+
+        <!-- BUSINESS -->
+        <div class="plan-card">
+          <div class="plan-tier">Business</div>
+          <div class="plan-price"><sup>$</sup>29</div>
+          <div class="plan-period">per month</div>
+          <div class="plan-onetime">or $49 one-time — lifetime access</div>
+          <div class="plan-divider"></div>
+          <div class="plan-features">
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Everything in Pro</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Up to 5 team members</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Client portal</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Invoice tracking</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Recurring invoices</div>
+            <div class="plan-feat on"><span class="plan-feat-icon">→</span> Priority support</div>
+          </div>
+          <button class="btn-outline" style="width:100%;padding:14px 0;justify-content:center">Get Business</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CTA ══════════════ -->
+  <div class="gold-line"></div>
+  <section id="cta" class="cta-section">
+    <div class="cta-bg-grid"></div>
+    <div class="cta-glow"></div>
+    <h2 class="cta-title">
+      Stop Sending<br>
+      <span style="color:var(--gold)">Bad Invoices.</span>
+    </h2>
+    <p class="cta-sub">Join 12,000+ freelancers and businesses who invoice like they mean business.</p>
+    <div class="cta-actions">
+      <button class="btn-gold" style="font-size:13px;padding:16px 40px">Generate Free Invoice</button>
+      <button class="btn-outline" style="font-size:13px;padding:15px 36px">See All Templates</button>
+    </div>
+    <p class="cta-note">✦ Free forever &nbsp;·&nbsp; No card required &nbsp;·&nbsp; Built by NovaStrikes</p>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer id="footer">
+    <div>
+      <div class="footer-brand-name">InvoXe</div>
+      <div class="footer-brand-desc">The cinematic invoice generator for every industry. A NovaStrikes product.</div>
+      <div class="footer-copy">© 2026 InvoXe · All rights reserved</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <div class="footer-col-links">
+        <a href="#features">Features</a>
+        <a href="#templates">Templates</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#">Generator</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-col-links">
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">NovaStrikes</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <div class="footer-col-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Status</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════ LIBRARIES ══════════════ -->
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Vanta.js NET effect -->
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Shared + Page JS -->
+  <script src="assets/js/_shared.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
