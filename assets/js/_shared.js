@@ -132,8 +132,9 @@ function initFormatPills() {
 }
 
 /* ── INIT ALL ───────────────────────────────── */
+// Cursor + nav boot on DOMContentLoaded
+// Lenis is booted from index.js AFTER the intro animation
 document.addEventListener('DOMContentLoaded', () => {
-  initLenis();
   initCursor();
   initNavbar();
   initReveal();
