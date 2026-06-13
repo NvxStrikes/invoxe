@@ -92,6 +92,19 @@
     </div>
   </section>
 
+
+  <!-- ══════════════ PARTICLE MORPH SECTION ══════════════ -->
+  <section id="particle-section" style="position:relative;z-index:2;height:300vh;background:var(--bg);">
+    <div style="position:sticky;top:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;">
+      <canvas id="particle-canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+      <div style="position:relative;z-index:2;text-align:center;pointer-events:none;">
+        <div class="section-label" style="justify-content:center;margin-bottom:16px;">Watch It Morph</div>
+        <h2 class="section-title" style="text-align:center;font-size:clamp(28px,4vw,52px);">Scroll to<br><span style="color:var(--gold)">Experience</span></h2>
+        <p style="font-size:14px;color:var(--muted);margin-top:12px;font-family:var(--f-mono);letter-spacing:.1em;">60,000 PARTICLES · SPHERE → GRID → TORUS</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ══════════════ TICKER ══════════════ -->
   <div class="ticker-section">
     <div class="ticker-track">
@@ -517,21 +530,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- ══════════════ LIBRARIES ══════════════ -->
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <!-- Vanta.js NET effect -->
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-  <!-- GSAP + ScrollTrigger -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <!-- Anime.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
-  <!-- Lenis smooth scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-
-  <!-- Shared + Page JS -->
+  <!-- JS -->
   <script src="assets/js/_shared.js"></script>
   <script src="assets/js/index.js"></script>
 </body>
